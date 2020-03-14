@@ -1,10 +1,13 @@
-import styled from 'styled-components';
-import useStats from '../utils/useStats';
+import styled from "styled-components";
+import useStats from "../utils/useStats";
 
 const StatGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 const StatBlock = styled.div`
   background: #f2f2f2;
